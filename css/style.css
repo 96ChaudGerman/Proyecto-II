@@ -33,6 +33,13 @@ h2{
     font-family: 'Orbitron', sans-serif;
     background-image: linear-gradient(to left, rgb(49, 49, 245) , rgb(175, 173, 173), rgb(49, 49, 255));
 }
+.parrafo-2{
+    border-bottom: solid;
+    background-color: antiquewhite;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 17px;
+    background-image: linear-gradient(to left, rgb(49, 49, 245) , rgb(175, 173, 173), rgb(49, 49, 255));
+}
 .opciones-1{
     background-color: brown;
     border: solid;
@@ -62,17 +69,13 @@ h2{
     align-items: center;
     align-content: stretch;
 }
-.grid-1{
-    bottom: 20px;
-}
-.grid-2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    justify-content: space-around;
-    justify-items: center;
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
     align-items: center;
-    align-content: stretch;
 }
 .infom{
     display: flex;
@@ -89,14 +92,33 @@ h5{
     background-image: linear-gradient(to left, red , yellow);
     
 }
+.h6{
+    border-top: solid;
+    background-image: linear-gradient(to left, rgb(49, 49, 245) , rgb(175, 173, 173), rgb(49, 49, 255));
+
+}
 .boton{
     margin: 6px;
 }
-.btn-outline-secondary{
-   margin: auto;
+.boton2{
+    display: flex;
+}
+.boton3{
+    position: relative;
+    top: 10px;
 }
 img{
-    width: 100%;
+    max-width: 100%;
+}
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: stretch;
 }
 .consulta{
     width: 100%;
@@ -106,7 +128,14 @@ img{
     border: 4px solid black;
     border-radius: 15px;
     font-family: 'Orbitron', sans-serif;
-    font-size: 11px;
+    font-size: 13px;
+}
+.hola{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center
 }
 @media only screen and (min-width: 992px ){
     .grid{
@@ -117,5 +146,16 @@ img{
 @media only screen and (min-width: 690px ){
     .formulario{
         width: 320px;
+    }
+}
+@media only screen and (min-width: 992px ){
+   .grid-4{
+    grid-template-columns: repeat(3, 1fr);
+   }
+}
+@media only screen and (max-width: 320px ){
+    .flex-container{
+        flex-direction: column;
+        width: 100%;
     }
 }
